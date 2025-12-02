@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>pdf</title>
+</head>
+<style type="text/css">
+@font-face {
+	font-family: 'Montserrat-Black';
+	src: url("fonts/montserrat/Montserrat-Black.ttf") format("truetype");
+}
+@font-face {
+	font-family: 'Montserrat-Medium';
+	src: url("fonts/montserrat/Montserrat-Medium.ttf") format("truetype");
+}
+@font-face {
+	font-family: 'Montserrat-Regular';
+	src: url("fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: 'Montserrat-Bold';
+	src: url("fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+	font-family: 'Montserrat-SemiBold';
+	src: url("fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype");
+}
+@font-face {
+	font-family: 'Montserrat-Italic';
+	src: url("fonts/montserrat/Montserrat-Italic.ttf") format("truetype");
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 500;
+	width: 100%;
+	font-family: 'Montserrat-Regular';
+	min-height: 100%;
+	color: #000;
+	background: #fff;
+}
+a{
+	outline: none;
+	text-decoration: none;
+	color: #555;
+}
+a:hover, a:focus{
+	outline: none;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+ul, ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+p{
+	margin:0px;
+	padding: 0;
+}
+@page { margin: 0px; }
+html { margin: 0px; }
+</style>
+<body style="margin:0px;">
+	<div class="container">
+		<table style="border-collapse: collapse; border: 0; width: 100%;">
+			<tbody>
+				<tr>
+					<td colspan="10" width="595">
+						<img src="{brochure_images_dir}/act-banner.png" style="width: 100%; position: absolute;">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="6" nowrap>
+						<div style="position: absolute; bottom: 35px; left: 40px;">
+							<h1 style="color: #2675b4; font-family: Montserrat-Black; font-size: 31pt; line-height: 35px;">{camp_state} {camp_sports}</h1>
+							<h2 style="color: #000; font-family: Montserrat-Medium; font-size: 29pt; line-height: 35px;">PROGRAM, {camp_suburb}</h2>
+							<h3 style="color: #000; font-family: Montserrat-Regular; font-size: 18pt; line-height: 30px;">{camp_dates}</h3>
+						</div>
+					</td>
+					<td colspan="4">
+						<div style="position: absolute; bottom: 30px; right: 30px;">
+							<p style="text-align: right; color: #2675b4; font-family: Montserrat-Regular; font-size: 18pt;">{camp_season} {camp_year}</p>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table style="border-collapse: collapse; border: 0; width: 100%;  padding: 10px 20PX; page-break-before: always; background-image: url({brochure_images_dir}/image-bg.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+			<tbody>
+				<tr style="background-color: #e4e5e6;">
+					<td colspan="10" style="position: relative; padding-left: 26px;">
+						<p style="background-color: #2675b4; position: absolute; height: 80px; top: 10px; bottom: 0; margin: auto; width: 16px;">&nbsp;</p>
+						<h1 style="font-family: Montserrat-Bold; font-size: 28pt; color: #2675b4; padding-left: 25px; line-height: 30px; padding-left: 40px; margin-top: 10px">{camp_state} {camp_sports}</h1>
+						<h2 style="color: #000; font-family: Montserrat-Regular; font-size: 26pt; padding-left: 25px; line-height: 30px; padding-left: 40px; margin-bottom: 10px">PROGRAM</h2>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="10" style="height: 15px;"></td>
+				</tr>
+				<tr>
+					<td colspan="7" style="padding-right: 12px; vertical-align: top;">
+						<div>
+							<h5 style="font-family: Montserrat-Bold; font-size: 14pt; color: #2675b4; line-height: 15px;">About Partner Programs</h5>
+							<p style="text-align: justify; font-size: 11pt; margin-bottom: 5px; line-height: 15px;">To meet a growing demand for more non-traditional sports, ASC is delighted to offer an expanded range of sports coaching programs for our customer’s. ASC, has identified and partnered with reputable companies to offer the best possible experience for children looking for new personal challenges and something new and exciting. Train in top  facilities, with expert qualified coaches, utilizing quality sport-specific equipment.</p>
+							<h5 style="font-family: Montserrat-Bold; font-size: 14pt; color: #2675b4;">Over 40 years of Australian Sports Camps</h5>
+							<p style="text-align: justify; font-size: 11pt; margin-bottom: 5px; line-height: 15px;">{camps_asc_overview}</p>
+							<h5 style="font-family: Montserrat-Bold; font-size: 14pt; color: #2675b4;">Camps for all Abilities</h5>
+							<p style="text-align: justify; font-size: 11pt; line-height: 15px;">ASC Partner Programs are perfect for beginners through to advanced players. So, we welcome participants aged 6-16 of all skill levels. Children are grouped according to their age, ability, and friendships. This maximises enjoyment right from the start and ensures that your child’s specific skill requirements are appropriately coached throughout the camp.</p>
+						</div>
+					</td>
+					<td colspan="3" width="90" style="padding-left: 12px; vertical-align: top;">
+						<div style="background-color: #e4e5e6; padding: 22px 12px;">
+							<h5 style="font-family: Montserrat-Bold; font-size: 14pt; color: #2675b4; margin-bottom: 20px;">REVIEWS</h5>
+							<h6 style="font-family: Montserrat-SemiBold; font-size: 10.87pt;">SIMON.M – ACT PARENT</h6>
+							<p style="font-family: Montserrat-Italic; font-size: 10pt; margin-bottom: 20px; line-height: 12px; text-align: justify;">Very good camp thanks, with special thanks to the coach, who was outstanding.</p>
+							<h6 style="font-family: Montserrat-SemiBold; font-size: 10.87pt;">SUSAN.H – WA PARENT</h6>
+							<p style="font-family: Montserrat-Italic; font-size: 10pt; margin-bottom: 25px; line-height: 12px; text-align: justify;">I liked that even though my child didn’t know other people, she made friends in the 3 days. It was great to see that team efforts and respecting one another were encouraged.</p>
+							<h6 style="font-family: Montserrat-SemiBold; font-size: 10.87pt; line-height: 12px;">LEANNE.M – VIC PARENT</h6>
+							<p style="font-family: Montserrat-Italic; font-size: 10pt; text-align: justify; line-height: 12px;">It was so easy to book. I really appreciated that you let me book for 2 days out of the 3 due to my child’s other commitments. The camp was well run and my son had a lot of fun. Would definitely do it again!</p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="10" style="height: 15px;"></td>
+				</tr>
+				<tr>
+					<td colspan="10" style="padding: 0;">
+						<table>
+							<tr>
+								<td colspan="10" style="padding: 0;">
+									<div>
+										<img src="{brochure_images_dir}/act-campus-banner.png" style="width: 750px; position: absolute;">
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table style="border-collapse: collapse; border: 0; width: 100%;  padding: 10px 20PX; page-break-before: always; background-image: url({brochure_images_dir}/image-bg.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+			<tbody>
+				<tr style="background-color: #e4e5e6;">
+					<td colspan="10" style="position: relative; padding-left: 26px;">
+						<p style="background-color: #2675b4; position: absolute; height: 100px; top: 10px; bottom: 0; margin: auto; width: 16px;">&nbsp;</p>
+						<h1 style="font-family: Montserrat-Bold; font-size: 28pt; color: #2675b4; padding-left: 25px; line-height: 30px; padding-left: 40px; margin-top: 15px;">ABOUT THE CAMP</h1>
+						<h2 style="color: #000; font-family: Montserrat-Regular; font-size: 18pt; padding-left: 25px; line-height: 30px; padding-left: 40px; line-height: 20px;"> {camp_state} {camp_sports} Program {camp_suburb}</h2>
+						<h2 style="color: #000; font-family: Montserrat-Regular; font-size: 17pt; padding-left: 25px; line-height: 30px; padding-left: 40px; line-height: 20px; margin-bottom: 20px;">{camp_dates}</h2>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="5" width="50%" style="vertical-align: top; padding-left: 30px; padding-right: 15px;">
+						<div>
+							<h5 style="font-family: Montserrat-Bold; font-size: 14pt; color: #2675b4;">Location</h5>
+							<p style="text-align: justify; font-size: 13pt; margin-bottom: 10px; line-height: 15px;">{camp_venue_name},<br>{camp_venue_address}</p>
+							
+						</div>
+					</td>
+					<td colspan="5" width="50%" style="vertical-align: top; padding-right: 30px; padding-left: 15px;">
+						<div>
+							<h5 style="font-family: Montserrat-Bold; font-size: 14pt; color: #2675b4;">Time</h5>
+							{time}
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="6" width="60%" style="vertical-align: top; padding-bottom: 15px; padding-left: 30px;">
+						<div>
+							<h5 style="font-family: Montserrat-Bold; font-size: 14pt; color: #2675b4; margin-bottom: 5px;">Sample Day</h5>
+							{sample_day}
+						</div>
+					</td>
+					<td colspan="4" width="40%" style="vertical-align: top; padding-bottom: 15px; padding-right: 30px;">
+						<div>
+							<img src="{brochure_images_dir}/act-about-banner.png">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="10" style="vertical-align: bottom;" valign="bottom">
+						{previous_talents}
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table style="border-collapse: collapse; border: 0; width: 100%;  padding: 10px 20PX; page-break-before: always; background-image: url({brochure_images_dir}/image-bg.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+			<tr style="background-color: #e4e5e6;">
+				<td colspan="10" style="position: relative; padding-left: 26px;">
+					<p style="background-color: #2675b4; position: absolute; height: 60px; top: 10px; bottom: 0; margin: auto; width: 16px;">&nbsp;</p>
+					<h1 style="font-family: Montserrat-Bold; font-size: 28pt; color: #2675b4; padding-left: 25px; line-height: 30px; padding-left: 40px; margin-top: 20px; margin-bottom: 20px;">WHY ASC?</h1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="5" width="50%" style="vertical-align: top; padding-right: 10px; padding-top: 20px;">
+					<div>
+						<p style="text-align: justify; font-size: 11pt; margin-bottom: 20px; line-height: 15px;">For Over 40 years, Australian Sports Camps have been recognised for the quality of our coaching staff and the delivery of our structured improvement-oriented programs that greatly enhance your child’s sporting skills.</p>
+					</div>
+				</td>
+				<td colspan="5" width="50%" style="vertical-align: top; padding-left: 10px; padding-top: 20px;">
+					<div>
+						<p style="text-align: justify; font-size: 11pt; margin-bottom: 20px; line-height: 15px;">All of our coaches are qualified and experienced, many having played and/or coached at the highest levels. Whether your child is trying the sport for the first time or is very experienced, our coaches will be able to deliver a program for their specific capabilities.</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="10" style="padding: 0; height: 60px;">&nbsp;</td>		
+			</tr>
+			<tr>
+				<td colspan="10" style="padding: 0; text-align: center;">
+					<div>
+						<img src="{brochure_images_dir}/why-asc.png" style="width: 730px;">
+					</div>
+				</td>		
+			</tr>
+			<tr>
+				<td colspan="10" style="padding: 0; height: 60px;">&nbsp;</td>		
+			</tr>
+		</table>
+		<!-- <table style="border-collapse: collapse; border: 0; width: 100%; page-break-before: always;">
+			<tr>
+				<td colspan="10" width="595">
+					<img src="{information}" style="width: 100%; position: absolute;">
+				</td>
+			</tr>
+		</table> -->
+		<table style="border-collapse: collapse; border: 0; width: 100%;  padding: 10px 25PX; page-break-before: always; background-image: url({{brochure_images_dir}/image-bg.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+			<tbody>
+				<tr style="background-color: #e4e5e6;">
+					<td colspan="10" style="position: relative; padding-left: 26px;">
+						<p style="background-color: #2675b4; position: absolute; height: 85px; top: 10px; bottom: 0; margin: auto; width: 16px;">&nbsp;</p>
+						<h1 style="font-family: Montserrat-Bold; font-size: 28pt; color: #2675b4; padding-left: 25px; line-height: 30px; padding-left: 40px; margin-top: 15px;">INFORMATION &</h1>
+						<h2 style="color: #2675b4; font-family: Montserrat-Regular; font-size: 26pt; padding-left: 25px; line-height: 30px; padding-left: 40px; margin-bottom: 10px">FAQS</h2>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="10" style="height: 20px;"></td>
+				</tr>
+				<tr>
+					<td colspan="5" width="50%" style="vertical-align: top; padding-right: 10px; padding-bottom: 20px;">
+						<div>
+							<h5 style="font-family: Montserrat-Bold; margin-bottom: 20px; font-size: 14pt; color: #2675b4; line-height: 12px;">What to Expect</h5>
+							<p style="text-align: justify; font-size: 11pt; margin-bottom: 30px; line-height: 13px;">Our camps offer expert training, first class facilities and utilise quality equipment, providing a great opportunity for your child to personally develop and improve their sporting skills. Each camp offers a structured and tailored program. With an average child to coach ratio of 10:1, we can guarantee that every child receives individual attention and care to enhance their experience and training at the camp.</p>
+							<h5 style="font-family: Montserrat-Bold; margin-bottom: 20px; font-size: 14pt; color: #2675b4; line-height: 12px;">Safety</h5>
+							<p style="text-align: justify; font-size: 11pt; margin-bottom: 30px; line-height: 13px;">Our first priority is always the happiness, enjoyment and safety for all of our participants.</p>
+							<p style="text-align: justify; font-size: 10.90pt; margin-bottom: 30px; line-height: 13px;">We have qualified first aid capability on site at all times and apply a ZERO-tolerance policy towards bullying, disrespectful or unsafe behaviour. We value diversity and all staff, volunteers, students, children, parents and visitors must keep to our strict code of behaviour so that we continually strive to provide a safe and supportive environment for all.</p>
+							<p style="text-align: justify; font-size: 10.90pt; margin-bottom: 30px; line-height: 13px;">We promote and adhere to the SunSmart recommendations of the Cancer Council of Victoria and therefore adopt many sun protection measures including sunscreen, hats and shade.</p>
+						</div>
+					</td>
+					<td colspan="5" width="50%" style="vertical-align: top; padding-left: 10px; padding-bottom: 10px;">
+						<div>
+							<h5 style="font-family: Montserrat-Bold; margin-bottom: 20px; font-size: 14pt; color: #2675b4; line-height: 12px;">FAQ’s</h5>
+							<h5 style="font-family: Montserrat-Bold; margin-bottom: 20px; font-size: 12pt; color: #414042; line-height: 13px;">ARE ASC PROGRAMS RIGHT FOR MY CHILD?</h5>
+							<p style="font-family: Montserrat-Italic; text-align: justify; font-size: 11pt; margin-bottom: 30px; line-height: 13px;">Yes! Programs are suitable for all ages and all skill levels as kids are grouped according to their age, ability and whether or not they want to be with their friends/siblings.</p>
+							<h5 style="font-family: Montserrat-Bold; margin-bottom: 20px; font-size: 12pt; color: #414042; line-height: 13px;">WHAT SHOULD MY CHILD PACK FOR CAMP?</h5>
+							<p style="font-family: Montserrat-Italic; text-align: justify; font-size: 11pt; margin-bottom: 20px; line-height: 13px;">Just like school, kids should bring their own lunch and snacks in a clearly named lunch box/bag and a drink bottle.</p>
+							<p style="font-family: Montserrat-Italic; text-align: justify; font-size: 11pt; margin-bottom: 30px; line-height: 13px;">Comfortable sports clothing should be worn to our camps. Children are welcome to train with their own sports equipment. However, there will be additional equipment available.</p>
+							<h5 style="font-family: Montserrat-Bold; margin-bottom: 20px; font-size: 12pt; color: #414042; line-height: 13px;">WHAT HAPPENS AFTER I BOOK ONLINE?</h5>
+							<p style="font-family: Montserrat-Italic; text-align: justify; font-size: 11pt; margin-bottom: 20px; line-height: 13px;">Once your booking is processed, you will be emailed a confirmation link with full details on the camp. Confirmation information will be resent to all families one week prior to camps starting.</p>
+							<p style="font-family: Montserrat-Italic; text-align: justify; font-size: 11pt; margin-bottom: 30px; line-height: 13px;">For other frequently asked questions, please visit our website.</p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="10" style="background-color: #e4e5e6; padding: 30px 10px;">
+						<table>
+							<tr>
+								<td colspan="7" width="380" style="vertical-align: top;">
+									<h5 style="font-family: Montserrat-Bold; font-size: 14pt; color: #2675b4; line-height: 12px; margin-bottom: 20px; padding-left: 5px;">Life’s Better With Sport!</h5>
+									<p style="text-align: justify; font-size: 10.90pt; margin-bottom: 25px; line-height: 13px; padding-left: 5px;">For more information on ASC’s sports camp programs please visit <br>our website <a href="https://australiansportscamps.com.au/" style="font-family: Montserrat-Bold; color: #000;">www.australiansportscamps.com.au</a> or <br> call us on <a href="callto:1300914368" style="font-family: Montserrat-Bold; color: #000;">1300 914 368.</a></p>
+								</td>
+								<td colspan="3" width="150" style="vertical-align: top; text-align: right;">
+									<img src="{brochure_images_dir}/footer-logo.png" style="padding-right: 5px;">
+								</td>
+							</tr>
+							<tr>
+								<td width="20" style="text-align: center; padding-bottom: 8px;">
+									<img src="{brochure_images_dir}/envalop.png">
+								</td>
+								<td colspan="4" width="150" style="padding-bottom: 8px;">
+									<a href="mailto:admin@australiansportscamps.com.au" style="font-size: 11pt; color: #000; text-align: left;">admin@australiansportscamps.com.au</a>
+								</td>
+								<td width="20" style="text-align: center; padding-bottom: 8px;">
+									<img src="{brochure_images_dir}/instagram.png">
+								</td>
+								<td colspan="4" width="150" style="padding-bottom: 8px;">
+									<p style="font-size: 11pt; text-align: left;">@AustSportsCamps</p>
+								</td>
+							</tr>
+							<tr>
+								<td width="20" style="text-align: center;">
+									<img src="{brochure_images_dir}/facebook.png">
+								</td>
+								<td colspan="4" width="150" style="padding-bottom: 15px;">
+									<p style="font-size: 11pt; text-align: left;">@AustralianSportsCamps</p>
+								</td>
+								<td width="20" style="text-align: center;">
+									<img src="{brochure_images_dir}/twitter.png">
+								</td>
+								<td colspan="4" width="150" style="padding-bottom: 15px;">
+									<p style="font-size: 11pt; text-align: left;">@AustSportsCamps</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
