@@ -1,0 +1,5 @@
+# Logs
+*.log
+zoho-asc-cron/curl_zoho/logs/
+portal/storage/logs/
+logs/
